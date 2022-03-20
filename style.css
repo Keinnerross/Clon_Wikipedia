@@ -1,6 +1,11 @@
 *{
     padding: 0%;
     margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
 }
 
 .header{
@@ -174,18 +179,232 @@ display: inline-block;
 /*selector de idiomas */
 
 .wiki_your_lang{
-    width: 200px;
-    height: 20px;
+    width: 100%;
+    height: 100px;
     display: flex;
-}
-hr{
-    width: 100px;
-    height: 1px;
-    display: inline-block;
-justify-content   : center;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
 
-.text_lang
-{
+.content_select{
+    width: 300px;
+    height:40px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid #c8ccd1 1px;
+    border-radius: 3px;
+    outline: solid white 1.6rem;
+    
+
+}
+
+.content_select .img_lang{
+    width: 20px;
+    height: 20px;
+    background-image:url(/Assets/lang_icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 0.8em;
+}
+
+.content_select h3{
+    font-size: .9em;
+    font-family: sans-serif;
+    color: #36c;
+}
+
+.content_select .select_lang{
+    font-weight: bold;
+    color: #36c;
+    width: 20px;
+    max-height: 20px;
+    margin-left: 0.5em;
+    border: 0;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.wiki_your_lang .mega_menu{
+    background-color: #c8ccd1;
+    width: 510px;
+    height:3px;
+    position:absolute;
+    z-index: -100;
+    border: solid #eff0f2  0.6px;
+}
+
+.separation{
+    width: 100%;
+}
+
+/* Footer */
+    
+
+.footer_wiki{
+    width: 100vw;
+    max-width:100%;
+    height: 400px;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    display: flex;
+    
+}
+
+/*info footer*/
+.info_footer{
+width: 350px;
+background-color: antiquewhite;
+margin: 20px 80px;
+
+}
+
+.content_footer{
+    width: 350px;
+    background-color: white;
+    padding-bottom: 30px;
+    
+}
+
+.content_footer .icon_content_footer{
+    width: 42px;
+    height: 42px;
+    background-image: url(/Assets/escribas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     display: inline-block;
+    margin-bottom: 72px;
+    margin-right: 10px;
+}
+
+.content_footer .text_content_footer{
+    display: inline-block;
+    width: 75%;
+    font-size: 13px;
+    color: #54595d;
+    line-height: 20px
+}
+
+.content_footer .text_content_footer .link_content_footer{
+    
+    font-size: 13px;
+    color: #36c;
+    
+    }
+    /*app footer*/
+
+
+.app_footer{
+    width: 350px;
+    max-height: 190px;
+    background-color: #f8f9fa;
+    padding: 10px;
+   
+}
+
+.Icon_app_wiki{
+    width: 39px;
+    height: 39px;
+    display: inline-block;
+    background-image: url(/Assets/app_icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: solid white 3px;
+    border-radius: 7px;
+    margin-bottom: 75px;
+    margin-right: 10px;
+    
+}
+
+.app_footer .text_app_wiki{
+    display: inline-block;
+    width: 75%;
+    font-size: 13px;
+    color: #54595d;
+    line-height: 20px
+
+}
+
+.app_footer .text_app_wiki h4{
+    font-size: 0.8em;
+}
+
+.app_footer .button_apps_store{
+    width: 350px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+.app_footer .button_apps_store .icon_google_play{
+    width: 120px;
+    height: 3em;
+    background-image: url(/Assets/play_store.png);
+    background-size: contain;
+    background-repeat: no-repeat ;
+    display:inline-block;
+}
+
+.app_footer .button_apps_store .icon_apple_store{
+    width: 120px;
+    height: 3em;
+    background-image: url(/Assets/apple_store.png);
+    background-size: contain;
+    background-repeat: no-repeat ;
+    display:inline-block;
+}
+
+/*other proyects */
+
+.other_proyects{
+    width: 100%;
+    display: grid;
+    grid-template-columns:  repeat(3, 280px) ;
+    grid-template-rows: repeat(4, 90px);
+    margin-left: 20px;
+}
+
+.other_proyects .other_proyect{
+    
+  
+    margin: 10px;
+}
+
+/*iconos url */
+
+.icon_commons{
+    width: 40px;
+    height: 50px;
+    background-image: url(/Assets/commons.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    
+    
+}
+
+/*texto url*/
+
+.other_proyect h3{
+    color: #36c;
+    font-weight: lighter;
+    display: inline-block;
+}
+.other_proyects_text{
+    
+    font-size: 0.8em;
+    color: #54595d;
+    line-height: 20px;
+    display: inline-block;
+    
+    width: 75%;
+    line-height: 16px;
+
 }
